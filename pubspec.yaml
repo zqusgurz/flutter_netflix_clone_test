@@ -63,6 +63,7 @@ flutter:
     - images/meatlogo.png
     - images/meatlogo_origin.jpg
     - images/bbongflix_logo.png
+    - images/test_movie_1.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
