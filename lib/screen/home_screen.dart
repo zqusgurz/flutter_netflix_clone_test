@@ -1,11 +1,10 @@
+// lib/screen/home_screen.dart
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_test/model/model_movie.dart';
+import 'package:netflix_clone_test/widget/carousel_slider.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -13,7 +12,25 @@ class _HomeScreenState extends State<HomeScreen> {
     Movie.fromMap({
       'title': '사랑의 불시착',
       'keyword': '사랑/로맨스/판타지',
-      'poster': 'test_moview_1.png',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
       'like': false
     })
   ];
@@ -25,13 +42,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return TopBar();
+    return ListView(
+      children: <Widget>[
+        Stack(
+          children: <Widget>[
+            CarouselImage(movies: movies),
+            TopBar(),
+          ],
+        )
+      ],
+    );
   }
 }
 
 class TopBar extends StatelessWidget {
-  const TopBar({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Container(
