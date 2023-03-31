@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1083454830976",
+    "project_id": "hyukflix",
+    "storage_bucket": "hyukflix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083454830976:android:09b6df8b4dc66fff896965",
+        "android_client_info": {
+          "package_name": "com.example.netflix_clone_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083454830976-1vtt722qlhtu9agv4p57pirhek3dulnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_nD7YtsZG6HhKSVm7M4riCxCIVUb3PKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083454830976-1vtt722qlhtu9agv4p57pirhek3dulnm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1083454830976-7tbll9ohpn2s9er2dlkrjru38imqha09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.netflixCloneTest.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

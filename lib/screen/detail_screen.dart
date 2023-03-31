@@ -31,7 +31,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     width: double.maxFinite,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('images/' + widget.moive.poster),
+                        image: NetworkImage(widget.moive.poster),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -46,8 +46,7 @@ class _DetailScreenState extends State<DetailScreen> {
                             children: <Widget>[
                               Container(
                                 padding: EdgeInsets.fromLTRB(0, 45, 0, 10),
-                                child: Image.asset(
-                                    'images/' + widget.moive.poster),
+                                child: Image.network(widget.moive.poster),
                                 height: 300,
                               ),
                               Container(
@@ -92,7 +91,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                 padding: EdgeInsets.all(5),
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '출연: ㅇㅇ, ㅇㅇ, ㅇㅇ, ㅇㅇ,\n, ㅇㅇ, ㅇㅇ, ㅇㅇ, ㅇㅇ',
+                                  '출연: 현빈, 손예진, 서지혜\n제작자: 이정효, 박지은',
                                   style: TextStyle(
                                       color: Colors.white60, fontSize: 12),
                                 ),
