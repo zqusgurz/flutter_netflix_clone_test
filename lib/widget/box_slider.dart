@@ -36,7 +36,7 @@ List<Widget> makeBoxImages(BuildContext context, List<Movie> movies) {
             fullscreenDialog: true,
             builder: (BuildContext context) {
               return DetailScreen(
-                moive: movies[i],
+                movie: movies[i],
               );
             },
           ),

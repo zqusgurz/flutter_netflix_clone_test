@@ -125,7 +125,7 @@ class _CarouselImageState extends State<CarouselImage> {
                               fullscreenDialog: true,
                               builder: (BuildContext context) {
                                 return DetailScreen(
-                                  moive: movies[_currentPage],
+                                  movie: movies[_currentPage],
                                 );
                               },
                             ),

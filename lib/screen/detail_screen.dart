@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone_test/model/model_movie.dart';
 
 class DetailScreen extends StatefulWidget {
-  final Movie moive;
-  const DetailScreen({super.key, required this.moive});
+  final Movie movie;
+  const DetailScreen({super.key, required this.movie});
 
   @override
   State<DetailScreen> createState() => _DetailScreenState();
@@ -15,7 +15,7 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   void initState() {
     super.initState();
-    like = widget.moive.like;
+    like = widget.movie.like;
   }
 
   @override
@@ -31,7 +31,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     width: double.maxFinite,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage(widget.moive.poster),
+                        image: NetworkImage(widget.movie.poster),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -46,8 +46,8 @@ class _DetailScreenState extends State<DetailScreen> {
                             children: <Widget>[
                               Container(
                                 padding: EdgeInsets.fromLTRB(0, 45, 0, 10),
-                                child: Image.network(widget.moive.poster),
                                 height: 300,
+                                child: Image.network(widget.movie.poster),
                               ),
                               Container(
                                 padding: EdgeInsets.all(7),
@@ -60,7 +60,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               Container(
                                 padding: EdgeInsets.all(7),
                                 child: Text(
-                                  widget.moive.title,
+                                  widget.movie.title,
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -85,7 +85,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               ),
                               Container(
                                 padding: EdgeInsets.all(5),
-                                child: Text(widget.moive.toString()),
+                                child: Text(widget.movie.toString()),
                               ),
                               Container(
                                 padding: EdgeInsets.all(5),
